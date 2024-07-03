@@ -124,7 +124,7 @@
                 kepada seluruh komunitas alumni.</p>
             <nav class="navbar-nav">
                 <a href="input.php" title="form input">
-                    <img width="64" height="64" style="margin-top: 20px;"
+                    <img width="64" height="64" style="margin-top: 10px;"
                         src="https://img.icons8.com/?size=100&id=47858&format=png&color=000000" />
                 </a>
 

@@ -7,10 +7,15 @@
     <link rel="icon" href="favicon.ico">
     <title>Data Alumni</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            margin-left: 125px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container" style="margin-left: 125px">
+    <div class="container">
         <h2 class="mt-5">Data Alumni</h2>
         <form method="get" action="">
             <div class="form-group">
@@ -33,6 +38,14 @@
 
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
+        }
+
+        session_start();
+
+        if (!isset($_SESSION['input_successful']) || !$_SESSION['input_successful']) {
+
+            header("Location: input.php");
+            exit();
         }
 
         $search = isset($_GET['search']) ? $_GET['search'] : '';
@@ -72,13 +85,15 @@
             }
             echo '</tbody>';
             echo '</table>';
+
+            $conn->close();
         } else {
             echo '<div class="alert alert-warning mt-3">No data found</div>';
         }
-
-        $conn->close();
         ?>
     </div>
+
+    <!-- Modal Filter -->
     <div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -116,6 +131,24 @@
             </div>
         </div>
     </div>
+
+    <!-- Pagination -->
+    <div class="container mt-3">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

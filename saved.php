@@ -34,4 +34,10 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+
+session_start();
+$_SESSION['input_successful'] = true;
+header("Location: data_alumni.php");
+exit();
+
 ?>
