@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
     <title>Data Alumni</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" style="margin-left: 125px">
         <h2 class="mt-5">Data Alumni</h2>
         <form method="get" action="">
             <div class="form-group">

@@ -27,7 +27,7 @@
             text-decoration: none;
         }
 
-        .navbar {
+        /* .navbar {
             height: 70px;
             width: 100%;
             background-color: #fff;
@@ -63,7 +63,7 @@
             font-size: 16px;
             color: #2c3e50;
             margin-left: 20px;
-        }
+        } */
 
         .container {
             max-width: 1200px;
@@ -72,7 +72,7 @@
         }
 
         .content {
-            margin-top: 100px;
+            margin-top: 25px;
             padding: 40px;
             text-align: center;
         }
@@ -102,7 +102,7 @@
 </head>
 
 <body>
-    <header class="navbar">
+    <!-- <header class="navbar">
         <div class="navbar-content">
             <h3>Data Alumni</h3>
             <nav class="navbar-nav">
@@ -111,7 +111,7 @@
                         src="https://img.icons8.com/?size=100&id=47858&format=png&color=000000" />
                 </a>
 
-            </nav>
+            </nav> -->
         </div>
     </header>
 
@@ -122,6 +122,13 @@
             <p>Di sini, Anda dapat memperbarui informasi terbaru mengenai alumni
                 dari berbagai angkatan. Kami mengumpulkan data untuk mempererat jaringan dan memberikan manfaat lebih
                 kepada seluruh komunitas alumni.</p>
+            <nav class="navbar-nav">
+                <a href="input.php" title="form input">
+                    <img width="64" height="64" style="margin-top: 20px;"
+                        src="https://img.icons8.com/?size=100&id=47858&format=png&color=000000" />
+                </a>
+
+            </nav>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
