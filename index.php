@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Alumni</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
     <style>
         * {
             font-family: 'Poppins';
@@ -26,42 +27,42 @@
             text-decoration: none;
         }
 
-        .navigation {
+        .navbar {
+            height: 70px;
+            width: 100%;
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            margin-top: 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 35px;
-            max-width: 1070px;
-            width: 100%;
-            margin: auto;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
         }
 
-        .menu {
+        .navbar-nav {
+            margin-right: 150px;
+        }
+
+        .navbar-content {
             display: flex;
-            justify-content: center;
-            flex: 1;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
         }
 
-        .menu li a {
-            padding: 3px 10px;
-            margin: 0 15px;
-            color: #3b3b3b;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            transition: all ease 0.3s;
-        }
-
-        .logo {
-            font-size: 1.4rem;
+        .navbar h3 {
+            margin-left: 150px;
+            font-size: 21px;
             font-weight: 600;
-            letter-spacing: 1px;
-            color: #202020;
-            margin-right: auto;
         }
 
-        .menu li a:hover,
-        .menu .active {
-            transition: all ease 0.3s;
+        .navbar nav a {
+            font-size: 16px;
+            color: #2c3e50;
+            margin-left: 20px;
         }
 
         .container {
@@ -71,59 +72,58 @@
         }
 
         .content {
+            margin-top: 100px;
             padding: 40px;
+            text-align: center;
         }
 
         .img-fluid {
-            margin-left: 650px;
+            width: 50%;
+            height: 50%;
         }
 
-        .col-lg-7 {
-            max-width: 500px;
-            margin-bottom: 400px;
+        .container {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        p {
+            margin-top: 20px;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <nav class="navigation">
-        <a href="index.html" class="logo">Data Alumni</a>
-        <!-- menu -->
-        <ul class="menu">
-            <li><a href="">Home</a></li>
-            <li><a href="input.php">input</a></li>
-            <li><a href="data_alumni.php">result</a></li>
-        </ul>
-    </nav>
+    <header class="navbar">
+        <div class="navbar-content">
+            <h3>Data Alumni</h3>
+            <nav class="navbar-nav">
+                <a href="input.php" title="form input">
+                    <img width="32" height="32"
+                        src="https://img.icons8.com/?size=100&id=47858&format=png&color=000000" />
+                </a>
+
+            </nav>
+        </div>
+    </header>
 
     <div class="container">
-        <div class="row align-items-center bg-light col-xxl-10 mx-auto py-4 content">
-            <div class="col-lg-5">
-                <div class="lc-block mb-4">
-                    <img class="img-fluid shadow"
-                        src="https://images.unsplash.com/photo-1525004866327-07739b938272?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTZ8fGJ1aWxkaW5nfGVufDB8Mnx8fDE2MzQ1NTA4MDc&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=480&amp;h=480"
-                        alt="Photo by Kaloyan Draganov">
-                </div>
-            </div>
-            <div class="col-lg-7">
-                <div class="lc-block mb-4">
-                    <div editable="rich">
-                        <h1 class="rfs-30 fw-bold">Lorem ipsum dolor sit amet</h1>
-                    </div>
-                </div>
-                <div class="lc-block mb-4">
-                    <div editable="rich">
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula
-                            malesuada placerat sit</p>
-                    </div>
-                </div>
-                <div class="lc-block">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </div>
-            </div>
+        <div class="content">
+            <img src="4751965.jpg" alt="img" class="img-fluid">
+            <h1>Selamat datang di pendataan alumni</h1>
+            <p>Di sini, Anda dapat memperbarui informasi terbaru mengenai alumni
+                dari berbagai angkatan. Kami mengumpulkan data untuk mempererat jaringan dan memberikan manfaat lebih
+                kepada seluruh komunitas alumni.</p>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
