@@ -68,9 +68,12 @@
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a href="index.php" class="btn btn-secondary">Back</a>
+            </div>
         </form>
     </div>
 </body>
 
-</html>
+</html> 
